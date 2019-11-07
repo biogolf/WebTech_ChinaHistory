@@ -66,7 +66,7 @@ function openDescription(n) {
         }
         document.getElementById("description"+n).style.padding = "2%";
         document.getElementById("description"+n).style.border = "2px solid rgb(253, 176, 10)";
-        document.getElementById("timeline"+n).style.backgroundColor = "rgb(255, 255, 0, 0.88)";
+        document.getElementById("timeline"+n).style.backgroundColor = "rgb(255, 255, 0, 0.7)";
         document.getElementById("topic"+n).style.backgroundColor = "rgb(255, 243, 176)";
         if (n%2==1) {
             document.getElementById("topic"+n).style.boxShadow = "5px 5px 5px rgb(253, 176, 10)";

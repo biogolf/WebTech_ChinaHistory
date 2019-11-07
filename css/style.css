@@ -132,6 +132,27 @@ html {
     left: 49%;
     height: 550vh;
     background-color: rgb(224, 161, 44);
+    background-image: url("../imageandBG/kled.png");
+    background-size: 100%;
+    background-position: center;
+}
+
+#tail{
+    position: absolute;
+    width: 160%;
+    transform: translate(-20%,-80%);
+}
+#flegs{
+    position: absolute;
+    width: 260%;
+    top: 520vh;
+    transform: translate(-30%,0%);
+}
+#blegs{
+    position: absolute;
+    width: 260%;
+    top: 30vh;
+    transform: translate(-30%,0%);
 }
 
 #ltimeline{
