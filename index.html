@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbarclick" onclick="slide()">เมนู</div>
+        <div class="topbarmenu">
+            <div class="list">
+                <div><a href="./">หน้าแรก</a></div>
+                <div><a href="content/01/">ราชวงศ์เซี่ย</a></div>
+                <div><a href="content/02/">ราชวงศ์ซาง</a></div>
+                <div><a href="content/03/">ราชวงศ์โจว</a></div>
+                <div><a href="content/04/">ยุคเลียดก๊ก</a></div>
+                <div><a href="content/05/">ราชวงศ์ฉิน</a></div>
+                <div><a href="content/06/">ราชวงศ์ฮั่นตะวันตก</a></div>
+                <div><a href="content/07/">ราชวงศ์ซิน</a></div>
+                <div><a href="content/08/">ราชวงศ์ฮั่นตะวันออก</a></div>
+                <div><a href="content/09/">ยุคสามก๊ก</a></div>
+                <div><a href="content/10/">ราชวงศ์จิ้นตะวันตก</a></div>
+                <div><a href="content/11/">ราชวงศ์จิ้นตะวันออก</a></div>
+                <div><a href="content/12/">ราชวงศ์เหนือใต้</a></div>
+                <div><a href="content/13/">ราชวงศ์สุย</a></div>
+                <div><a href="content/14/">ราชวงศ์ถัง</a></div>
+                <div><a href="content/15/">ยุคห้าราชวงศ์ สิบอาณาจักร</a></div>
+                <div><a href="content/16/">ราชวงศ์ซ่ง</a></div>
+                <div><a href="content/17/">ราชวงศ์หยวน</a></div>
+                <div><a href="content/18/">ราชวงศ์หมิง</a></div>
+                <div><a href="content/19/">ราชวงศ์ชิง</a></div>
+                <div><a href="content/20/">ยุคสาธารณรัฐจีน</a></div>
+                <div><a href="content/21/">ยุคสาธารณรัฐประชาชนจีน</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="headpic">
+        <img src="test.png" width="80%">
+    </div>
+
+    <div class="preinfo">
+        <p>ประวัติศาสตร์จีน ถือว่าเป็นประวัติศาสตร์ที่มีอายุถึง 5,000 ปี<br>
+           กว่าจะมาเป็นประเทศจีนปัจจุบัน ได้เกิดเหตุการณ์ต่าง ๆ ในแต่ละยุคราชวงศ์<br>
+           มีทั้งการรวมประเทศเป็นปึกแผ่น ทั้งการแตกแยกเป็นกลุ่มต่าง ๆ<br>
+           บางสมัยปกครองด้วยชาวจีนฮั่น บางสมัยถูกชนเผ่าต่างถิ่นเข้ามาปกครอง<br>
+           อิทธิพลของอารยธรรมมากมายส่งผลอย่างมากต่อชาติอื่น ๆ ในทวีปเอเชีย
+        </p>
+        <p><b>ดังนั้น เรามาศึกษาประวัติศาสตร์จีนจากไทม์ไลน์ด้านล่างนี้ไปด้วยกันเถอะ</b></p>
+    </div>
+    <div class="alltimeline">
+        <div id="ltimeline">
+            <div class="left" id="period1">
+                <div id="description1" class="description">
+
+                    <a href="content/01">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic1" class="topic" onclick="openDescription(1)">ราชวงศ์เซี่ย</div>
+            </div>
+            <div class="left" id="period3">
+                <div id="description3" class="description">
+                    
+                    <a href="content/03">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic3" class="topic" onclick="openDescription(3)">ราชวงศ์โจว</div>
+            </div>
+            <div class="left" id="period5">
+                <div id="description5" class="description">
+                    
+                    <a href="content/05">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic5" class="topic" onclick="openDescription(5)">ราชวงศ์ฉิน</div>
+            </div>
+            <div class="left" id="period7">
+                <div id="description7" class="description">
+                    
+                    <a href="content/07">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic7" class="topic" onclick="openDescription(7)">ราชวงศ์ซิน</div>
+            </div>
+            <div class="left" id="period9">
+                <div id="description9" class="description">
+                    
+                    <a href="content/09">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic9" class="topic" onclick="openDescription(9)">ยุคสามก๊ก</div>
+            </div>
+            <div class="left" id="period11">
+                <div id="description11" class="description">
+                    
+                    <a href="content/11">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic11" class="topic" onclick="openDescription(11)">ราชวงศ์จิ้นตะวันออก</div>
+            </div>
+            <div class="left" id="period13">
+                <div id="description13" class="description">
+                    
+                    <a href="content/13">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic13" class="topic" onclick="openDescription(13)">ราชวงศ์สุย</div>
+            </div>
+            <div class="left" id="period15">
+                <div id="description15" class="description">
+                    
+                    <a href="content/15">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic15" class="topic" onclick="openDescription(15)">ยุคห้าราชวงศ์ สิบอาณาจักร</div>
+            </div>
+            <div class="left" id="period17">
+                <div id="description17" class="description">
+                    
+                    <a href="content/17">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic17" class="topic" onclick="openDescription(17)">ราชวงศ์หยวน</div>
+            </div>
+            <div class="left" id="period19">
+                <div id="description19" class="description">
+                    ค.ศ. 1644-1912 <br>
+                    ยุคสมัยที่ถูกปกครองโดยชาวแมนจู<br>
+                    เกิดการเปลี่ยนแปลงวัฒนธรรมต่าง ๆ มากมาย<br>
+                    จากช่วงต้นของยุคสมัยที่เจริญรุ่งเรือง สู่ความเสื่อมถอยตอนปลายราชวงศ์....
+                    <a href="content/19">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic19" class="topic" onclick="openDescription(19)">ราชวงศ์ชิง</div>
+            </div>
+            <div class="left" id="period21">
+                <div id="description21" class="description">
+                    ค.ศ. 1949-ปัจจุบัน<br>
+                    ชัยชนะของพรรคคอมมิวนิสต์ เปลี่ยนแปลงประเทศให้ปกครองแบบสังคมนิยม<br>
+                    การพัฒนาประเทศจากความแร้นแค้น กลายเป็นประเทศที่มีอัตราการเติบโตของเศรษฐกิจแบบก้าวกระโดด...
+                    <a href="content/21">อ่านเพิ่มเติม</a>
+                </div>
+                <div id="topic21" class="topic" onclick="openDescription(21)">ยุคสาธารณรัฐประชาชนจีน</div>
+            </div>
+        </div>
+
+        <div id="timeline"></div>
+
+        <div id="rtimeline">
+            <div class="right" id="period2">
+                <div id="topic2" class="topic" onclick="openDescription(2)">ราชวงศ์ซาง</div>
+                <div id="description2" class="description">
+                    
+                    <a href="content/02">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period4">
+                <div id="topic4" class="topic" onclick="openDescription(4)">ยุคเลียดก๊ก</div>
+                <div id="description4" class="description">
+                    
+                    <a href="content/04">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period6">
+                <div id="topic6" class="topic" onclick="openDescription(6)">ราชวงศ์ฮั่นตะวันตก</div>
+                <div id="description6" class="description">
+                    
+                    <a href="content/06">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period8">
+                <div id="topic8" class="topic" onclick="openDescription(8)">ราชวงศ์ฮั่นตะวันออก</div>
+                <div id="description8" class="description">
+                    
+                    <a href="content/08">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period10">
+                <div id="topic10" class="topic" onclick="openDescription(10)">ราชวงศ์จิ้นตะวันตก</div>
+                <div id="description10" class="description">
+                    
+                    <a href="content/10">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period12">
+                <div id="topic12" class="topic" onclick="openDescription(12)">ราชวงศ์เหนือใต้</div>
+                <div id="description12" class="description">
+                    
+                    <a href="content/12">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period14">
+                <div id="topic14" class="topic" onclick="openDescription(14)">ราชวงศ์ถัง</div>
+                <div id="description14" class="description">
+                    
+                    <a href="content/14">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period16">
+                <div id="topic16" class="topic" onclick="openDescription(16)">ราชวงศ์ซ่ง</div>
+                <div id="description16" class="description">
+                    
+                    <a href="content/16">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period18">
+                <div id="topic18" class="topic" onclick="openDescription(18)">ราชวงศ์หมิง</div>
+                <div id="description18" class="description">
+                    
+                    <a href="content/18">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+            <div class="right" id="period20">
+                <div id="topic20" class="topic" onclick="openDescription(20)">ยุคสาธารณรัฐจีน</div>
+                <div id="description20" class="description">
+                    ค.ศ. 1912-1949 <br>
+                    ยุคสมัยแห่งการเปลี่ยนแปลง<br>
+                    จากระบอบสมบูรณาญาสิทธิราชย์เป็นประชาธิปไตย<br>
+                    เกิดปัญหาทั้งจากภายใน
+                    การแย่งชิงอำนาจระหว่างประชาธิปไตยและเผด็จการ<br>
+                    ทั้งเกิดปัญหาจากภายนอก ภัยจากสงครามโลกครั้งที่ 1 และ 2....
+                    <a href="content/20">อ่านเพิ่มเติม</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottominfo">
+            <img src="imageandBG/china_map_flag_1.png" width="50%">
+            <p>ปัจจุบัน ประเทศจีนมีพื้นที่กว่า 9.6 ล้านตารางกิโลเมตร<br>
+            มีประชากรประมาณ 1.4 พันล้านคน<br>
+            เมืองหลวงคือกรุงปักกิ่ง ตั้งอยู่ทางตะวันออกเฉียงเหนือของประเทศ<br>
+            ใช้ภาษาจีนกลางเป็นภาษาราชการ<br>
+            ปกครองในลักษณะสังคมนิยมที่มีเอกลักษณ์เฉพาะแบบจีน
+            </p>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scripttimeline.js"></script>
+</body>
+</html>

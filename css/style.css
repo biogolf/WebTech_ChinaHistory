@@ -1,0 +1,313 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.topbar{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(117, 25, 25);
+    z-index: 3;
+}
+
+.topbarclick{
+    width: 7.5%;
+    height: 8vh;
+    background-color: rgb(231, 102, 102);
+    font-size: 4vh;
+    margin: 1vh;
+    padding: 0.5%;
+    text-align: center;
+    border-radius: 20%;
+}
+.topbarclick:hover{
+    background-color: rgb(255, 147, 147);
+}
+
+.topbarmenu{
+    width: 0%;
+    height: 90vh;
+    background-color: rgb(236, 134, 134);
+    transition: 0.2s;
+}
+
+.list{
+    position: relative;
+    left: 5%;
+    padding: 0.5%;
+    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.list div{
+    margin: 0.75%;
+    font-size: 2.25vh;
+}
+
+.headpic{
+    position: absolute;
+    top: 0vh;
+    width: 100%;
+    height: 60vh;
+    background-image:url("../css/baner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.preinfo{
+    position: absolute;
+    top: 60vh;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(255, 245, 152);
+}
+
+.preinfo p{
+    margin: 1.4%;
+    text-align: center;
+    line-height: 200%;
+    font-size: 2.8vh;
+    font-family: 'Athiti', sans-serif;
+}
+
+.content{
+    position: absolute;
+    top: 60vh;
+    width: 100%;
+    height: auto;
+    background-image:url("../css/test4.jpg");
+    background-attachment: scroll;
+
+}
+
+.contentinfo{
+    position: relative;
+    margin: 5%;
+    padding: 3%;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(255, 229, 126, 0.7);
+}
+
+.contentinfo p{
+    text-indent: 2.5em;
+}
+
+.contentinfo p,li{
+    font-size: 1.25em;
+    font-family: 'Athiti', sans-serif;
+}
+.contentinfo h1,h2{
+    text-align: center;
+}
+.contentinfo h2{
+    margin-bottom: 3%;
+}
+.contentinfo h1,h2,h3,h4,h5{
+    font-family: 'Chonburi', cursive;
+}
+
+.contentinfo .images{
+    position: relative;
+    margin: 1%;
+    margin-bottom: 2%;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.alltimeline{
+    position: absolute;
+    top: 110vh;
+    height: 550vh;
+    width: 100%;
+    background-color: rgb(208, 214, 219);
+}
+
+#timeline{
+    position: absolute;
+    top: 0;
+    width: 2%;
+    left: 49%;
+    height: 550vh;
+    background-color: rgb(224, 161, 44);
+}
+
+#ltimeline{
+    position: absolute;
+    top: 0;
+    width: 49%;
+    left: 0;
+    height: 550vh;
+    background-color: transparent;
+}
+
+#rtimeline{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 49%;
+    height: 550vh;
+    background-color: transparent;
+}
+
+.bottom{
+    position: absolute;
+    top: 660vh;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 245, 152);
+}
+
+.bottominfo{
+    position: relative;
+    margin: 2%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.bottominfo p{
+    margin: 2%;
+    font-size: 3.3vh;
+    line-height: 300%;
+    font-family: 'Athiti', sans-serif;
+}
+
+.left{
+    position: absolute;
+    right: 2%;
+    width: 90%;
+}
+
+.right{
+    position: absolute;
+    left: 2%;
+    width: 90%;
+    
+}
+
+.right .topic{
+    float: left;
+}
+
+.left .topic{
+    float: right;
+}
+
+.topic{
+    position: relative;
+    width: 40%;
+    background-color: rgb(255, 239, 10);
+    text-align: center;
+    font-size: 3vh;
+    font-family: 'Athiti', sans-serif;
+}
+
+.right .topic:hover{
+    background-color: rgb(255, 243, 176);
+    box-shadow: -5px 5px 5px rgb(253, 176, 10);
+}
+
+.left .topic:hover{
+    background-color: rgb(255, 243, 176);
+    box-shadow: 5px 5px 5px rgb(253, 176, 10);
+}
+
+.right .description{
+    float: right;
+    position: relative;
+    height: 0vh;
+    width: 55%;
+    text-align: center;
+    background-color:  rgb(255, 243, 176);
+    transition: 0.5s;
+    font-size: 0;
+    z-index: 2;
+    word-break: break-word;
+    overflow: auto;
+    font-family: 'Athiti', sans-serif;
+    border: 0px solid rgb(253, 176, 10);
+}
+
+.left .description{
+    float: left;
+    position: relative;
+    height: 0vh;
+    width: 55%;
+    text-align: center;
+    background-color:  rgb(255, 243, 176);
+    transition: 0.5s;
+    font-size: 0;
+    z-index: 2;
+    word-break: break-word;
+    overflow: auto;
+    font-family: 'Athiti', sans-serif;
+    border: 0px solid rgb(253, 176, 10);
+}
+
+a:link {
+    color: rgb(102, 14, 14);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(102, 14, 14);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(102, 14, 14);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(102, 14, 14);
+  }
+
+@media screen and (max-width: 768px) {
+    .topbar{
+        height: 5vh;
+    }
+    .topbarclick{
+        width: 10%;
+        margin: 0.5vh;
+        height: 4vh;
+        font-size: 2vh;
+    }
+    
+    .topbarmenu{
+        height: 95vh;
+    }
+    .list div{
+        font-size: 2.5vh;
+    }
+    .preinfo p{
+        margin-top: 10%;
+        font-size: 2vh;
+    }
+
+    .contentinfo {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .contentinfo .images img{
+        width: 50%;
+    }
+    .right .topic{
+        font-size: 2vh;
+    }
+    .left .topic{
+        font-size: 2vh;
+    }
+
+    .bottominfo p{
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .contentinfo .images img{
+        width: 75%;
+    }
+}
