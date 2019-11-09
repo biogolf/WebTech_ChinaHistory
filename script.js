@@ -11,11 +11,13 @@ function slide(){
                 topbarmenu[i].style.width = "30%";
             }
             list[i].style.display = "inline";
+            topbarmenu[i].style.borderRight = "3px solid rgb(128, 10, 10)";
             openTopBarMenu = 1;
         }
         else{
             topbarmenu[i].style.width = "0%";
             list[i].style.display = "none";
+            topbarmenu[i].style.borderRight = "0px solid rgb(128, 10, 10)";
             openTopBarMenu = 0;
         }
     }

@@ -44,6 +44,15 @@ html {
     font-size: 2.25vh;
 }
 
+#headname{
+    position: absolute;
+    right: 1%;
+    bottom: 0;
+    font-size: 6vh;
+    font-family: 'Chonburi', cursive;
+    color: rgb(243, 192, 26);
+}
+
 .headpic{
     position: absolute;
     top: 0vh;
@@ -164,6 +173,25 @@ html {
     transform: translate(-35%,-10%);
     z-index: 2;
 }
+#backtotop{
+    position: absolute;
+    font-family: 'Chonburi', cursive;
+    font-size: 3.3vh;
+    text-align: center;
+    width: 800%;
+    top: 562vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: rgb(168, 15, 15);
+    color: rgb(243, 192, 26);
+    border-radius: 5%;
+    z-index: 2;
+}
+#backtotop:hover{
+    background-color: rgb(243, 192, 26);
+    color: rgb(168, 15, 15);
+}
+
 
 #ltimeline{
     position: absolute;
@@ -201,7 +229,9 @@ html {
 .bottominfo p{
     margin: 2%;
     font-size: 3.3vh;
-    line-height: 300%;
+    line-height: 230%;
+    font-weight: bold;
+    color: rgb(175, 22, 22);
     font-family: 'Athiti', sans-serif;
 }
 
@@ -338,6 +368,14 @@ a:link {
 
     .bottominfo p{
         font-size: 2vh;
+    }
+    #backtotop{
+        font-size: 1.6vh;
+        width: 1200%;
+        top: 553vh;
+    }
+    #headname{
+        font-size: 3vh;
     }
 }
 
