@@ -122,7 +122,10 @@ html {
     top: 110vh;
     height: 550vh;
     width: 100%;
-    background-color: rgb(208, 214, 219);
+    background-image: url("../imageandBG/sky.png");
+    background-size: 100%;
+    background-position: center;
+    background-attachment: scroll;
 }
 
 #timeline{
@@ -153,6 +156,13 @@ html {
     width: 260%;
     top: 30vh;
     transform: translate(-30%,0%);
+}
+#head{
+    position: absolute;
+    width: 333%;
+    top: 547vh;
+    transform: translate(-35%,-10%);
+    z-index: 2;
 }
 
 #ltimeline{
@@ -268,22 +278,26 @@ html {
 }
 
 a:link {
-    color: rgb(102, 14, 14);
+    color: rgb(223, 30, 30);
+    font-weight: bold;
   }
   
   /* visited link */
   a:visited {
-    color: rgb(102, 14, 14);
+    color: rgb(223, 30, 30);
+    font-weight: bold;
   }
   
   /* mouse over link */
   a:hover {
-    color: rgb(102, 14, 14);
+    color: rgb(223, 30, 30);
+    font-weight: bold;
   }
   
   /* selected link */
   a:active {
-    color: rgb(102, 14, 14);
+    color: rgb(223, 30, 30);
+    font-weight: bold;
   }
 
 @media screen and (max-width: 768px) {
