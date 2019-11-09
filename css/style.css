@@ -46,12 +46,38 @@ html {
 
 #headname{
     position: absolute;
-    right: 1%;
-    bottom: 0;
-    font-size: 6vh;
+    right: 0;
+    top: 0;
+    height: 130%;
+    background-color: rgb(117, 25, 25);
     font-family: 'Chonburi', cursive;
     color: rgb(243, 192, 26);
+    padding-left: 2%;
+    padding-right: 1%;
 }
+
+#namegroup{
+    float: left;
+    margin-top: 2%;
+}
+#name{
+    font-size: 4.5vh;
+    text-align: right;
+    z-index: 4;
+}
+#group{
+    font-size: 2.25vh;
+    text-align: right;
+    z-index: 4;
+}
+#icon{
+    float: left;
+    margin-top: 1%;
+    height: 90%;
+    text-align: right;
+    z-index: 4;
+}
+
 
 .headpic{
     position: absolute;
@@ -374,8 +400,11 @@ a:link {
         width: 1200%;
         top: 553vh;
     }
-    #headname{
-        font-size: 3vh;
+    #name{
+        font-size: 2.5vh;
+    }
+    #group{
+        font-size: 1.25vh;
     }
 }
 
