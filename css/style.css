@@ -19,6 +19,7 @@ html {
     padding: 0.25%;
     text-align: center;
     border-radius: 20%;
+    font-family: 'Athiti', sans-serif;
 }
 .topbarclick:hover{
     background-color: rgb(255, 147, 147);
@@ -38,6 +39,7 @@ html {
     display: none;
     overflow-y: auto;
     overflow-x: hidden;
+    font-family: 'Athiti', sans-serif;
 }
 .list div{
     margin: 0.75%;
@@ -129,6 +131,7 @@ html {
 .contentinfo{
     position: relative;
     margin: 5%;
+    margin-bottom: 15vh;
     padding: 3%;
     padding-left: 20%;
     padding-right: 20%;
@@ -159,6 +162,40 @@ html {
     margin-bottom: 2%;
     font-size: 0.75em;
     text-align: center;
+}
+.prevnext{
+    position: absolute;
+    bottom: 0;
+    height: 15vh;
+    width: 100%;
+}
+.prev{
+    position: absolute;
+    top: 4vh;
+    left: 2%;
+    height: 8vh;
+    width: 10%;
+    background-color: rgb(172, 26, 26);
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 1.5vh;
+    border-radius: 1vw;
+    color: rgb(243, 192, 26);
+    font-family: 'Chonburi', cursive;
+}
+.next{
+    position: absolute;
+    top: 4vh;
+    right: 2%;
+    height: 8vh;
+    width: 10%;
+    background-color: rgb(172, 26, 26);
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 1.5vh;
+    border-radius: 1vw;
+    color: rgb(243, 192, 26);
+    font-family: 'Chonburi', cursive;
 }
 
 .alltimeline{
@@ -298,6 +335,7 @@ html {
     text-align: center;
     font-size: 3vh;
     font-family: 'Athiti', sans-serif;
+    border-radius: 0.5vw;
 }
 
 .right .topic:hover{
@@ -414,6 +452,23 @@ a:link {
     }
     #group{
         font-size: 1.25vh;
+    }
+    .contentinfo{
+        margin-bottom: 10vh;
+    }
+    .prev{
+        top: 7vh;
+        height: 6vh;
+        width: 20%;
+        font-size: 2vh;
+        padding-top: 1.5vh;
+    }
+    .next{
+        top: 7vh;
+        height: 6vh;
+        width: 20%;
+        font-size: 2vh;
+        padding-top: 1.5vh;
     }
 }
 
