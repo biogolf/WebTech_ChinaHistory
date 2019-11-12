@@ -128,6 +128,7 @@ html {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
     height: 60vh;
 }
 
@@ -507,6 +508,10 @@ a:link {
         border-left: 1vh solid transparent;
         border-right: 1vh solid transparent;
         border-top: 2vh solid rgb(243, 192, 26);
+    }
+    .headpic img{
+        height: 60vh;
+        width: auto;
     }
 }
 
