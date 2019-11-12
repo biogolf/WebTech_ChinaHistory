@@ -20,6 +20,7 @@ html {
     text-align: center;
     border-radius: 20%;
     font-family: 'Athiti', sans-serif;
+    cursor: pointer;
 }
 .topbarclick:hover{
     background-color: rgb(255, 147, 147);
@@ -44,6 +45,27 @@ html {
 .list div{
     margin: 0.75%;
     font-size: 2.25vh;
+}
+#time{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 4vh;
+    color: rgb(243, 192, 26);
+    font-family: 'Athiti', sans-serif;
+    transform: translate(-50%,0);
+}
+#timepointer{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    transform: translate(-50%,0);
+	border-left: 1.5vh solid transparent;
+	border-right: 1.5vh solid transparent;
+    border-top: 3vh solid rgb(243, 192, 26);
+    display: none;
 }
 
 #headname{
@@ -100,6 +122,13 @@ html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
+}
+.headpic img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60vh;
 }
 
 .preinfo{
@@ -336,6 +365,7 @@ html {
     font-size: 3vh;
     font-family: 'Athiti', sans-serif;
     border-radius: 0.5vw;
+    cursor: pointer;
 }
 
 .right .topic:hover{
@@ -444,8 +474,8 @@ a:link {
     }
     #backtotop{
         font-size: 1.6vh;
-        width: 1200%;
-        top: 553vh;
+        width: 800%;
+        top: 555vh;
     }
     #name{
         font-size: 2.5vh;
@@ -470,10 +500,33 @@ a:link {
         font-size: 2vh;
         padding-top: 1.5vh;
     }
+    #time{
+        font-size: 2.5vh;
+    }
+    #timepointer{
+        border-left: 1vh solid transparent;
+        border-right: 1vh solid transparent;
+        border-top: 2vh solid rgb(243, 192, 26);
+    }
 }
 
 @media screen and (max-width: 426px){
     .contentinfo .images img{
         width: 75%;
     }
+    #backtotop{
+        font-size: 1.6vh;
+        width: 1200%;
+        top: 553vh;
+    }
+    #name{
+        font-size: 1.75vh;
+    }
+    #group{
+        font-size: 1.25vh;
+    }
+    #headname{
+        height: 110%;
+    }
+    
 }
