@@ -60,12 +60,16 @@ function openDescription(n) {
         document.getElementById("description"+n).style.height = "30vh";
         if (screen.width <= 768){
             document.getElementById("description"+n).style.fontSize = "1.8vh";
+            document.getElementById("desbutton"+n).style.fontSize = "2vh";
+            document.getElementById("desbutton"+n).style.paddingTop = "6%";
         }
         else{
             document.getElementById("description"+n).style.fontSize = "2.5vh";
+            document.getElementById("desbutton"+n).style.fontSize = "3vh";
+            document.getElementById("desbutton"+n).style.paddingTop = "1%";
         }
-        document.getElementById("description"+n).style.padding = "2%";
         document.getElementById("description"+n).style.border = "3px solid rgb(253, 176, 10)";
+        document.getElementById("description"+n).style.zIndex = "3";
         document.getElementById("timeline"+n).style.backgroundColor = "rgb(255, 8, 0, 0.7)";
         document.getElementById("topic"+n).style.backgroundColor = "rgb(255, 243, 176)";
         if (n%2==1) {
@@ -80,6 +84,9 @@ function openDescription(n) {
         document.getElementById("description"+n).style.fontSize = "0";
         document.getElementById("description"+n).style.padding = "0";
         document.getElementById("description"+n).style.border = "0px solid rgb(253, 176, 10)";
+        document.getElementById("description"+n).style.zIndex = "2";
+        document.getElementById("desbutton"+n).style.fontSize = "0vh";
+        document.getElementById("desbutton"+n).style.paddingTop = "0%";
         document.getElementById("timeline"+n).style.backgroundColor = "transparent";
         document.getElementById("topic"+n).removeAttribute("style");
         isOpen[n-1] = 0;

@@ -8,7 +8,7 @@ function slide(){
                 topbarmenu[i].style.width = "60%";
             }
             else{
-                topbarmenu[i].style.width = "30%";
+                topbarmenu[i].style.width = "25%";
             }
             list[i].style.display = "inline";
             topbarmenu[i].style.borderRight = "3px solid rgb(128, 10, 10)";
